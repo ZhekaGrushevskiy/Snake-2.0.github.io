@@ -161,6 +161,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         if (!(document.getElementById('audio-off').classList.contains('done'))) {
             click.play();
         }
+        document.getElementById('press-swipe').classList.remove('done');
         gameOver.classList.remove('done');
         score = 0;
         count = 0;
@@ -355,11 +356,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
     document.getElementById('cntue').onclick = function () {
         move = '';
         document.getElementById('press-swipe').classList.remove('done');
-    };
-
-    var f1 = {
-        posX: snake[0].posX,
-        posY: snake[0].posY
     };
 
     draw();
